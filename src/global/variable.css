@@ -1,0 +1,8 @@
+:host {
+    --primary-color: #108F5A;
+    --primary-color-hover: #0B7855;
+    --danger-color: #DC2626;
+    --danger-color-hover: #991B1B;
+    --warning-color: #FFD026;
+    --warning-color-hover: #DBAD1B;
+}

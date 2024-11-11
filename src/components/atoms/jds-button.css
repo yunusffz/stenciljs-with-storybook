@@ -1,0 +1,168 @@
+@import './../../global/variable.css';
+
+.jds-button {
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.jds-button--primary {
+    background-color: var(--primary-color);
+    
+    &:hover {
+        background-color: var(--primary-color-hover);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: var(--primary-color);
+    }
+
+    &:focus:focus-visible {
+        border: 3px solid #A0F6B0;
+        background-color: #16A75C;
+    }
+
+    &:disabled {
+        border: 1px solid #D4D4D4 !important;
+        background-color: #F5F5F5 !important;
+        color: #A3A3A3 !important;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.jds-button--secondary {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: #FFFFFF;
+
+    &:hover {
+        background-color: #E6F6EC;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: #CFFAD2;
+    }
+
+    &:focus:focus-visible {
+        border: 2px solid var(--primary-color);
+        background-color: #E6F6EC;
+    }
+
+    &:disabled {
+        border: 1px solid #D4D4D4;
+        background-color: #FFFFFF;
+        color: #A3A3A3;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.jds-button--tertiary {
+    color: var(--primary-color);
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    &:active {
+        background-color: #E6F6EC;
+    }
+
+    &:focus:focus-visible {
+        border: 2px solid var(--primary-color);
+        background-color: #E6F6EC;
+    }
+
+    &:disabled {
+        color: #A3A3A3;
+    }
+}
+
+.jds-button--danger {
+    background-color: var(--danger-color);
+    
+    &:hover {
+        background-color: var(--danger-color-hover);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: #B91C1C;
+    }
+
+    &:focus:focus-visible {
+        border: 3px solid #FECACA;
+        background-color: var(--danger-color);
+    }
+
+    &:disabled {
+        border: 1px solid #D4D4D4 !important;
+        background-color: #F5F5F5 !important;
+        color: #A3A3A3 !important;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.jds-button--warning {
+    background-color: var(--warning-color);
+    color: #0D0D0D;
+    
+    &:hover {
+        background-color: var(--warning-color-hover);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: var(--warning-color);
+    }
+
+    &:focus:focus-visible {
+        border: 3px solid #FFF2A8;
+        background-color: #FFDF5C;
+    }
+
+    &:disabled {
+        border: 1px solid #D4D4D4 !important;
+        background-color: #F5F5F5 !important;
+        color: #A3A3A3 !important;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.jds-button--lg {
+    padding: 16px 20px 16px 20px;
+    font-size: 18px;
+    border-radius: 12px;
+    line-height: 24px;
+}
+
+.jds-button--md {
+    padding: 12px 16px 12px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 46px;
+}
+
+.jds-button--sm {
+    padding: 10px 12px 10px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    height: 40px;
+}
